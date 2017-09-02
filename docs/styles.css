@@ -1,3 +1,41 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  background-color: #F2F5EA;
+  color: #2C363F;
+  margin: 0;
+}
+
+skate-header {
+  display: block;
+  padding: 2.7777777777777777rem 2.2222222222222223rem 1.6666666666666667rem 2.2222222222222223rem;
+}
+
+pre code {
+  font-size: 110%;
+}
+
+/* Header */
 header {
-  background: green;
+  text-align: center;
+}
+
+.primary-title {
+  font-size: 2.2em;
+}
+
+.primary-logo {
+  font-size: 200%;
+  margin: 0;
+}
+
+
+.subtitle {
+  font-weight: 100;
+}
+/* end header */
+
+.main-example {
+  display: flex;
+  justify-content: center;
 }

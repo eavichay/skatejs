@@ -1,12 +1,19 @@
-import { Component, h } from './skate.js';
-import './styles-from.js';
+import { Component } from './component.js';
+import { html } from './lit-html.js';
+import './styles.js';
 
 class Header extends Component {
   renderCallback() {
-    return h('header', null, [
-      h('styles-from', {selector: '#sk-styles'}),
-      'This is the header'
-    ]);
+    return html`
+      <header>
+        <skate-styles></skate-styles>
+        <h1 class="primary-title">
+          <div class="primary-logo">⛸</div>
+          <div>SkateJS</div>
+        </h1>
+        <h2 class="subtitle">Component mixins for all your renderers</h2>
+      </header>
+    `;
   }
 }
 

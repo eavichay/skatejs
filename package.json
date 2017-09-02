@@ -23,8 +23,16 @@
     "vdom",
     "virtual"
   ],
-  "files": ["esnext", "es", "node", "src", "umd"],
-  "dependencies": {},
+  "files": [
+    "esnext",
+    "es",
+    "node",
+    "src",
+    "umd"
+  ],
+  "dependencies": {
+    "lit-html": "^0.5.0"
+  },
   "devDependencies": {
     "@skatejs/bore": "4.0.0",
     "@skatejs/ssr": "0.12.2",
@@ -78,7 +86,10 @@
     "types": "get-typed src/index.js --dest umd/skatejs"
   },
   "lint-staged": {
-    "*.(js|json)": ["prettier --write", "git add"]
+    "*.(js|json)": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "config": {
     "commitizen": {
@@ -86,11 +97,19 @@
     }
   },
   "babel": {
-    "presets": ["latest", "react", "stage-0"]
+    "presets": [
+      "latest",
+      "react",
+      "stage-0"
+    ]
   },
   "jest": {
-    "modulePathIgnorePatterns": ["./node_modules"],
-    "setupFiles": ["./test/unit/setup"],
+    "modulePathIgnorePatterns": [
+      "./node_modules"
+    ],
+    "setupFiles": [
+      "./test/unit/setup"
+    ],
     "setupTestFrameworkScriptFile": "./test/unit/setup-test",
     "testEnvironment": "@skatejs/ssr/jest"
   }
